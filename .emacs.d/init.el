@@ -300,6 +300,11 @@
 (use-package company
   :ensure t)
 
+(use-package treesit-auto
+  :ensure t
+  :config
+  (global-treesit-auto-mode 1))
+
 ;; Customize
 ;; ==============================
 
@@ -309,7 +314,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(company corfu treemacs-tab-bar treemacs-magit treemacs async dired-subtree magit denote tmr ledger-mode markdown-mode markdown delight modus-themes embark-consult embark consult marginalia vertico orderless mu4e)))
+   '(treesit-auto company corfu treemacs-tab-bar treemacs-magit treemacs async dired-subtree magit denote tmr ledger-mode markdown-mode markdown delight modus-themes embark-consult embark consult marginalia vertico orderless mu4e)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
